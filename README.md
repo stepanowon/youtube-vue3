@@ -32,7 +32,7 @@ MIT
 #### CDN - install
 ~~~
 <script type="text/javascript" src="https://unpkg.com/vue@next"></script>
-<script type="text/javascript" src="https://contactsvc2.vercel.app/js/youtube-vue3.umd.js"></script>
+<script type="text/javascript" src="https://unpkg.com/youtube-vue3"></script>
 ~~~
 #### CDN - usage
 ~~~
@@ -42,7 +42,7 @@ MIT
 	</div>
 </div>
 <script src="https://unpkg.com/vue@next"></script>
-<script src="js/v3/youtube-vue.umd.js" type="text/javascript"></script>
+<script src="https://unpkg.com/youtube-vue3" type="text/javascript"></script>
 <script type="text/javascript">
 const app = Vue.createApp({
 	name : "App",
@@ -53,7 +53,7 @@ const app = Vue.createApp({
 	},
 
 })
-YoutubeVue.default(app)
+YoutubeVue3.default(app)
 const vm = app.mount("#app")
 </script>
 ......
