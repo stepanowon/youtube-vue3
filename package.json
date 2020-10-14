@@ -1,12 +1,30 @@
 {
   "name": "youtube-vue3",
   "version": "0.1.0",
+  "description": "Youtube player component for vue.js 3.x",
   "private": true,
+  "main": "dist/youtube-vue3.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --filename youtube-vue3 --name YoutubeVue3 src/index.js",
     "lint": "vue-cli-service lint"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stepanowon/youtube-vue3.git"
+  },
+  "keywords": [
+    "Youtube",
+    "Player",
+    "Vue 3"
+  ],
+  "author": "Stephen Won",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stepanowon/youtube-vue3/issues"
+  },
+  "homepage": "https://github.com/stepanowon/youtube-vue3",
   "dependencies": {
     "core-js": "^3.6.5",
     "vue": "^3.0.0"
