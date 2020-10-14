@@ -13,8 +13,9 @@ This is based on https://developers.google.com/youtube/player_parameters?hl=en
 ------------
 
 > Contact : stepanowon@hotmail.com   
-> Author : Stephen Won(원형섭), OpenSG Inc.  
-> Online Demo : https://youtube-vue3.vercel.app/
+> Author : Stephen Won(원형섭), OpenSG Inc.    
+> Online Demo1 : [jsfiddle](https://jsfiddle.net/StephenWon/1e6o384t/)     
+> Online Demo2 : https://youtube-vue3.vercel.app/
 
 ## Screen Shot
 #### by videoid
