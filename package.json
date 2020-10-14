@@ -2,7 +2,7 @@
   "name": "youtube-vue3",
   "version": "0.1.0",
   "description": "Youtube player component for vue.js 3.x",
-  "private": true,
+  "private": false,
   "main": "dist/youtube-vue3.common.js",
   "unpkg": "dist/youtube-vue3.umd.js",
   "scripts": {
