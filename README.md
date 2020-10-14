@@ -61,9 +61,9 @@ const vm = app.mount("#app")
 ##
 #### NPM Registry - install
 ~~~
-npm install --save youtube-vue
+npm install --save youtube-vue3
 - or -
-yarn add youtube-vue
+yarn add youtube-vue3
 ~~~
 
 #### NPM Registry - usage
@@ -80,13 +80,13 @@ yarn add youtube-vue
       <button @click="stopCurrentVideo">Stop</button>
       <button @click="pauseCurrentVideo">Pause</button>
     </div>
-    <YoutubeVue ref="player" :videoid="play.video_id" :width="640" :height="480" :autoplay="1" :loop="play.loop" :listType="play.listType" 
+    <YoutubeVue3 ref="player" :videoid="play.video_id" :width="640" :height="480" :autoplay="1" :loop="play.loop" :listType="play.listType" 
       :list="play.list" @ended="onEnded" @paused="onPaused" @played="onPlayed"/>
   </div>
 </template>
 
 <script>
-import YoutubeVue from 'youtube-vue'
+import YoutubeVue3 from 'youtube-vue3'
 
 export default {
   name: 'App',
@@ -96,7 +96,7 @@ export default {
     }
   },
   components: {
-    YoutubeVue
+    YoutubeVue3
   },
   methods: {
     applyConfig() {
