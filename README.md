@@ -39,7 +39,7 @@ MIT
 ~~~
 <div id="app">
 	<div>
-		<youtube-vue :videoid="video_id" :loop="loop" :autoplay="autoplay" />
+		<youtube-vue3 :videoid="video_id" :loop="loop" :autoplay="autoplay" />
 	</div>
 </div>
 <script src="https://unpkg.com/vue@next"></script>
