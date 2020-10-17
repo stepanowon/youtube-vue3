@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import YoutubeVue3 from './YoutubeVue3'
+import YoutubeVue3 from '@/components/YoutubeVue3'
 
 export default {
   name: 'App',
