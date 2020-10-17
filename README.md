@@ -18,14 +18,7 @@ This is based on https://developers.google.com/youtube/player_parameters?hl=en
 > Online Demo2 : https://youtube-vue3.vercel.app/
 
 ## Screen Shot
-#### by videoid
 <img src="https://raw.githubusercontent.com/stepanowon/youtube-vue3/master/images/videoid.jpg" width="640" height="480" />
-
-#### by search
-<img src="https://raw.githubusercontent.com/stepanowon/youtube-vue3/master/images/search.jpg" width="640" height="480" />
-
-#### by playlist
-<img src="https://raw.githubusercontent.com/stepanowon/youtube-vue3/master/images/playlist.jpg" width="640" height="480" />
 
 ## License
 MIT 
@@ -60,41 +53,39 @@ const vm = app.mount("#app")
 ......
 ~~~
 ##
-#### NPM Registry - install
+#### NPM - install
 ~~~
 npm install --save youtube-vue3
 - or -
 yarn add youtube-vue3
 ~~~
 
-#### NPM Registry - usage
+#### NPM - usage
 ~~~
 <template>
-  <div id="app">
+  <div>
     <div>
       video_id : <input type="text" v-model="temp.video_id" /><br />
-      listType : <input type="text"  v-model="temp.listType" /><br />
-      list : <input type="text"  v-model="temp.list" /><br />
       loop : <input type="number"  v-model.number="temp.loop" /><br />
       <button @click="applyConfig">Apply</button>
       <button @click="playCurrentVideo">Play</button>
       <button @click="stopCurrentVideo">Stop</button>
       <button @click="pauseCurrentVideo">Pause</button>
     </div>
-    <YoutubeVue3 ref="player" :videoid="play.video_id" :width="640" :height="480" :autoplay="1" :loop="play.loop" :listType="play.listType" 
-      :list="play.list" @ended="onEnded" @paused="onPaused" @played="onPlayed"/>
+    <YoutubeVue3 ref="youtube" :videoid="play.video_id" :loop="play.loop" :width="480" :height="320"  
+      @ended="onEnded" @paused="onPaused" @played="onPlayed"/>
   </div>
 </template>
 
 <script>
-import { YoutubeVue3 } from 'youtube-vue3'
+import YoutubeVue3 from './YoutubeVue3'
 
 export default {
   name: 'App',
   data() {
     return { 
-      temp : { video_id:"3P1CnWI62Ik", listType:"search", list:"", loop:0 },
-      play : { video_id:"3P1CnWI62Ik", listType:"search", list:"", loop:0 }
+      temp: { video_id:"3P1CnWI62Ik", loop:1 },
+      play : { video_id:"3P1CnWI62Ik", loop:1 }
     }
   },
   components: {
@@ -105,13 +96,13 @@ export default {
       this.play = Object.assign(this.play, this.temp)
     },
     playCurrentVideo() {
-      this.$refs.player.playVideo();
+      this.$refs.youtube.player.playVideo();
     },
     stopCurrentVideo() {
-      this.$refs.player.stopVideo();
+      this.$refs.youtube.player.stopVideo();
     },
     pauseCurrentVideo() {
-      this.$refs.player.pauseVideo();
+      this.$refs.youtube.player.pauseVideo();
     },
     onEnded() {
       console.log("## OnEnded")
@@ -141,27 +132,10 @@ export default {
    * videoid 
       - type : String 
       - Youtube video id
-   * hl 
-      - type : String
-      - default value : 'en' 
-      - interface language(ex:en, ko, ja)
    * loop
       - type : Number
       - default value : 0
       - a setting of 1 causes the player to play the initial video again and again
-   * rel
-      - type : Number
-      - default value : 0
-      - a setting of 1 causes the player to show related videos when playback of the initial video ends.
-   * listType
-	   - type : String
-	   - list type : 'search', 'playlist', 'user_uploads'
-   * list
-      - type : String
-      - If the listType parameter value is search, then the list parameter value specifies the search query.
-      - If the listType parameter value is user_uploads, then the list parameter value identifies the YouTube channel whose uploaded videos will be loaded.
-      - If the listType parameter value is playlist, then the list parameter value specifies a YouTube playlist ID. In the parameter value, you need to prepend the playlist ID with the letters PL as shown in the example below.
-      - if you want to use this parameter, videoid parameter must not be specified. 
 ##
 #### methods
   * playVideo()

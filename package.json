@@ -1,6 +1,6 @@
 {
   "name": "youtube-vue3",
-  "version": "0.1.2",
+  "version": "0.1.3yarn serv",
   "description": "Youtube player component for vue.js 3.x",
   "private": false,
   "main": "dist/youtube-vue3.common.js",
@@ -28,7 +28,8 @@
   "homepage": "https://github.com/stepanowon/youtube-vue3",
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "youtube-player": "^5.5.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
