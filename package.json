@@ -1,6 +1,6 @@
 {
   "name": "youtube-vue3",
-  "version": "0.1.3yarn serv",
+  "version": "0.1.3",
   "description": "Youtube player component for vue.js 3.x",
   "private": false,
   "main": "dist/youtube-vue3.common.js",
