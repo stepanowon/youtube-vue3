@@ -18,7 +18,7 @@ This is based on https://developers.google.com/youtube/player_parameters?hl=en
 > Online Demo2 : https://youtube-vue3.vercel.app/
 
 ## Screen Shot
-<img src="https://raw.githubusercontent.com/stepanowon/youtube-vue3/master/images/videoid.jpg" width="640" height="480" />
+<img src="https://raw.githubusercontent.com/stepanowon/youtube-vue3/master/images/videoid.png" width="640" height="480" />
 
 ## License
 MIT 
