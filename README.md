@@ -78,7 +78,7 @@ yarn add youtube-vue3
 </template>
 
 <script>
-import YoutubeVue3 from './YoutubeVue3'
+import { YoutubeVue3 } from 'youtube-vue3'
 
 export default {
   name: 'App',
