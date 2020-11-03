@@ -3,11 +3,11 @@
 Youtube Player Component for Vue.js 3.x.
 This is based on https://developers.google.com/youtube/player_parameters?hl=en 
 
-[![npm](https://img.shields.io/npm/v/youtube-vue.svg )](https://www.npmjs.com/package/youtube-vue)
-[![npm](https://img.shields.io/npm/dm/youtube-vue.svg)](https://www.npmjs.com/package/youtube-vue)
-[![GitHub stars](https://img.shields.io/github/stars/stepanowon/youtube-vue.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/stepanowon/youtube-vue/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/stepanowon/youtube-vue.svg?style=social&label=Fork&style=for-the-badge)](https://github.com/stepanowon/youtube-vue/network)
-[![Build Status](https://travis-ci.org/stepanowon/youtube-vue.svg?branch=master)](https://travis-ci.org/stepanowon/youtube-vue)
+[![npm](https://img.shields.io/npm/v/youtube-vue3.svg )](https://www.npmjs.com/package/youtube-vue3)
+[![npm](https://img.shields.io/npm/dm/youtube-vue3.svg)](https://www.npmjs.com/package/youtube-vue3)
+[![GitHub stars](https://img.shields.io/github/stars/stepanowon/youtube-vue3.svg?style=social&label=Stars&style=for-the-badge)](https://github.com/stepanowon/youtube-vue3/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/stepanowon/youtube-vue3.svg?style=social&label=Fork&style=for-the-badge)](https://github.com/stepanowon/youtube-vue3/network)
+[![Build Status](https://travis-ci.org/stepanowon/youtube-vue3.svg?branch=master)](https://travis-ci.org/stepanowon/youtube-vue3)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 ------------
