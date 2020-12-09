@@ -1,7 +1,7 @@
 
 # youtube-vue3
-Youtube Player Component for Vue.js 3.x. 
-This is based on https://developers.google.com/youtube/player_parameters?hl=en 
+Youtube Player Component for Vue.js 3.x.  
+This is based on [youtube-player](https://github.com/gajus/youtube-player) 
 
 Youtube Player for Vue 2.x--> [Here](https://github.com/stepanowon/youtube-vue)    
 
