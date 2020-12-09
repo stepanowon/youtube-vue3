@@ -1,6 +1,6 @@
 {
   "name": "youtube-vue3",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Youtube player component for vue.js 3.x",
   "private": false,
   "main": "dist/youtube-vue3.common.js",
@@ -28,14 +28,14 @@
   "homepage": "https://github.com/stepanowon/youtube-vue3",
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0",
+    "vue": "^3.0.4",
     "youtube-player": "^5.5.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/compiler-sfc": "^3.0.4",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0"
