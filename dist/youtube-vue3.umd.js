@@ -3251,7 +3251,7 @@ if (typeof window !== 'undefined') {
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/YoutubeVue3.vue?vue&type=template&id=553b4487
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--13-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--1-0!./node_modules/vue-loader-v16/dist??ref--1-1!./src/components/YoutubeVue3.vue?vue&type=template&id=531a1cf0
 
 var _hoisted_1 = {
   ref: "player",
@@ -3260,7 +3260,7 @@ var _hoisted_1 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return Object(external_commonjs_vue_commonjs2_vue_root_Vue_["openBlock"])(), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createElementBlock"])("div", _hoisted_1, null, 512);
 }
-// CONCATENATED MODULE: ./src/components/YoutubeVue3.vue?vue&type=template&id=553b4487
+// CONCATENATED MODULE: ./src/components/YoutubeVue3.vue?vue&type=template&id=531a1cf0
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
@@ -3328,7 +3328,8 @@ var dist_default = /*#__PURE__*/__webpack_require__.n(dist);
       autoplay: this.autoplay,
       loop: this.loop,
       controls: this.controls,
-      modestbranding: this.modestbranding
+      modestbranding: this.modestbranding,
+      playlist: this.video_id
     };
     this.player = dist_default()("youtube-vue-player-soma", {
       host: "https://www.youtube.com",
