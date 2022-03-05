@@ -1,14 +1,17 @@
 {
   "name": "youtube-vue3",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Youtube player component for vue.js 3.x",
   "private": false,
   "main": "dist/youtube-vue3.common.js",
   "unpkg": "dist/youtube-vue3.umd.js",
+  "types": "./dist/youtube-vue3.d.ts",
   "scripts": {
+    "clean": "rimraf dist",
+    "cp:type": "cpy youtube-vue3.d.ts ../../dist/ --cwd=./src/types  ",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "build:lib": "vue-cli-service build --target lib --filename youtube-vue3 --name YoutubeVue3 src/index.js",
+    "build": "npm run clean && vue-cli-service build",
+    "build:lib": "npm run clean && vue-cli-service build --target lib --filename youtube-vue3 --name YoutubeVue3 src/index.js && npm run cp:type",
     "lint": "vue-cli-service lint"
   },
   "repository": {
@@ -26,20 +29,6 @@
     "url": "https://github.com/stepanowon/youtube-vue3/issues"
   },
   "homepage": "https://github.com/stepanowon/youtube-vue3",
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^3.0.4",
-    "youtube-player": "^5.5.2"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.4",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.0.0-0"
-  },
   "eslintConfig": {
     "root": true,
     "env": {
@@ -58,5 +47,21 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "cpy-cli": "^4.0.0",
+    "vue": "^3.2.31",
+    "youtube-player": "^5.5.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.4",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "rimraf": "^3.0.2"
+  }
 }
