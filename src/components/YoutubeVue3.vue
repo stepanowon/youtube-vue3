@@ -27,6 +27,7 @@ export default {
       loop: this.loop,
       controls: this.controls,
       modestbranding: this.modestbranding,
+      playlist: this.video_id,
     };
     this.player = YouTubePlayer("youtube-vue-player-soma", {
       host: "https://www.youtube.com",
