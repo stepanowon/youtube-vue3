@@ -15,7 +15,7 @@
       :width="640"
       :height="480"
       :modestbranding="1"
-      :controls="0"
+      :controls="1"
       @ended="onEnded"
       @paused="onPaused"
       @played="onPlayed"
