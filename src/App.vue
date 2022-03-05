@@ -10,6 +10,7 @@
     </div>
     <YoutubeVue3
       ref="youtube"
+      :autoplay="1"
       :videoid="play.video_id"
       :loop="play.loop"
       :width="640"
