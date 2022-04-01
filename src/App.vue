@@ -21,20 +21,6 @@
       @paused="onPaused"
       @played="onPlayed"
     />
-
-    <YoutubeVue3
-      ref="youtube2"
-      :autoplay="1"
-      :videoid="play.video_id"
-      :loop="play.loop"
-      :width="640"
-      :height="480"
-      :modestbranding="1"
-      :controls="1"
-      @ended="onEnded"
-      @paused="onPaused"
-      @played="onPlayed"
-    />
   </div>
 </template>
 
