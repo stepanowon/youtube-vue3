@@ -1,6 +1,6 @@
 {
   "name": "youtube-vue3",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "Youtube player component for vue.js 3.x",
   "private": false,
   "main": "dist/youtube-vue3.common.js",
@@ -51,6 +51,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "cpy-cli": "^4.0.0",
+    "shortid": "^2.2.16",
     "vue": "^3.2.31",
     "youtube-player": "^5.5.2"
   },

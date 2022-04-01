@@ -1,9 +1,10 @@
 <template>
-  <div ref="player" id="youtube-vue-player-soma"></div>
+  <div ref="player" :id="playerid"></div>
 </template>
 
 <script>
 import YouTubePlayer from "youtube-player";
+import shortid from "shortid";
 
 export default {
   name: "YoutubeVue3",
@@ -19,7 +20,11 @@ export default {
   data() {
     return {
       ready: 0,
+      playerid: "",
     };
+  },
+  created() {
+    this.playerid = "youtube-vue-player-" + shortid.generate();
   },
   mounted() {
     let playerVars = {
@@ -29,7 +34,8 @@ export default {
       modestbranding: this.modestbranding,
       playlist: this.video_id,
     };
-    this.player = YouTubePlayer("youtube-vue-player-soma", {
+
+    this.player = YouTubePlayer(this.playerid, {
       host: "https://www.youtube.com",
       width: this.width,
       height: this.height,
