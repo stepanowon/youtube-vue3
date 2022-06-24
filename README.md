@@ -165,6 +165,7 @@ export default {
 #### methods
 
 - playVideo()
+- pauseVideo()
 - stopVideo()
 - mute()
 - unMute()
