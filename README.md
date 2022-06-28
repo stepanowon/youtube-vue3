@@ -30,50 +30,52 @@ MIT
 
 #### CDN - install
 
-```
+```html
 <script type="text/javascript" src="https://unpkg.com/vue@next"></script>
 <script type="text/javascript" src="https://unpkg.com/youtube-vue3"></script>
 ```
 
 #### CDN - usage
 
-```
+```html
 <div id="app">
-	<div>
-		<youtube-vue3 :videoid="video_id" :loop="loop" :autoplay="autoplay" />
-	</div>
+  <div>
+    <youtube-vue3 :videoid="video_id" :loop="loop" :autoplay="autoplay" />
+  </div>
 </div>
+
 <script src="https://unpkg.com/vue@next"></script>
 <script src="https://unpkg.com/youtube-vue3" type="text/javascript"></script>
+
 <script type="text/javascript">
 const app = Vue.createApp({
-	name : "App",
-	data() {
-		return {
-		  video_id:"3P1CnWI62Ik", loop:0, autoplay:1
-		}
-	},
-
+  name: "App",
+  data () {
+    return {
+      video_id: "3P1CnWI62Ik", 
+      loop: 0,
+      autoplay: 1,
+    }
+  },
 })
+	
 YoutubeVue3.default(app)
 const vm = app.mount("#app")
 </script>
-......
 ```
-
 ##
 
 #### NPM - install
 
-```
+```bash
 npm install --save youtube-vue3
-- or -
+# or #
 yarn add youtube-vue3
 ```
 
 #### NPM - usage
 
-```
+```vue
 <template>
   <div>
     <div>
@@ -96,12 +98,12 @@ export default {
   name: 'App',
   data() {
     return {
-      temp: { video_id:"3P1CnWI62Ik", loop:1 },
-      play : { video_id:"3P1CnWI62Ik", loop:1 }
+      temp: { video_id: "3P1CnWI62Ik", loop: 1 },
+      play : { video_id: "3P1CnWI62Ik", loop: 1 },
     }
   },
   components: {
-    YoutubeVue3
+    YoutubeVue3,
   },
   methods: {
     applyConfig() {
@@ -124,8 +126,8 @@ export default {
     },
     onPlayed() {
       console.log("## OnPlayed")
-    }
-  }
+    },
+  },
 }
 </script>
 ```
